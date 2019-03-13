@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check_Mail(str) {
+        regex = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regex.test(str)){
+            return x + " la mail hop le";
+        }
+        else {
+            return x + " la mail khong hop le";
+        }
+    }
+    var x = "a@gmail.com";
+    document.write(check_Mail(x)+ "</br>");
+     x = "ab@yahoo.com";
+     document.write(check_Mail(x)+ "</br>");
+     x = "abc@hotmail.com";
+     document.write(check_Mail(x)+ "</br>");
+     x = "@gmail.com";
+     document.write(check_Mail(x)+ "</br>");
+     x = "@#abc@gmail.com";
+     document.write(check_Mail(x)+ "</br>");
+
+</script>
+</body>
+</html>
